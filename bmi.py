@@ -34,23 +34,23 @@ def input_calculate():
     a = float(x) * 10 ** 4 / float(y) ** 2
     print(a)
     if a < 18.5:
-        message_ =  tkinter.Message(text="Your BMI is {}".format(a) + " . " + "You are underweight.")
+        message_ =  tkinter.Message(text="Your BMI is {:.2f}.You are underweight.".format(a))
         message_.config(width=350, bg="aliceblue")
         message_.place(x=70, y=300)
     elif 18.5<=a<=25:
-        message_1 = tkinter.Message(text="Your BMI is {}".format(a) + " . " + "You are normal weight.")
+        message_1 = tkinter.Message(text="Your BMI is {:.2f}.You are normal weight.".format(a) )
         message_1.config(width=350, bg="aliceblue")
         message_1.place(x=70, y=300)
     elif 25 <a<=30:
-        message_2 = tkinter.Message(text="Your BMI is {}".format(a) + " . " + "You are overweight.")
+        message_2 = tkinter.Message(text="Your BMI is {:.2f}.You are overweight.".format(a))
         message_2.config(width=350,bg="aliceblue")
         message_2.place(x=70, y=300)
     elif 30<a<40:
-        message_3 = tkinter.Message(text="Your BMI is {}".format(a) + " . " + "You are obese.")
+        message_3 = tkinter.Message(text="Your BMI is {:.2f}.You are obese.".format(a))
         message_3.config(width=350, bg="aliceblue")
         message_3.place(x=70, y=300)
     else:
-        message_4 = tkinter.Message(text="Your BMI is {}".format(a) + " . " + "You are morbidly obese.")
+        message_4 = tkinter.Message(text="Your BMI is {:.2f}.You are morbidly obese.".format(a))
         message_4.config(width=350, bg="aliceblue")
         message_4.place(x=70, y=300)
 
